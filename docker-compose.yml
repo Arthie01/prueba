@@ -1,0 +1,10 @@
+##hacer la comunicacion entre dos contenedores
+
+services:
+  api:
+    build: .
+    container_name: libreria
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./app:/app/app
